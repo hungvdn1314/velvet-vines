@@ -1,24 +1,59 @@
-# Logs
-logs
-*.log
+# ==========================================
+# 1. OS & System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# 2. Node & Build Outputs
+# ==========================================
+node_modules/
+dist/
+dist-ssr/
+*.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ==========================================
+# 3. Environment & Secrets (NEVER COMMIT)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
 
-# Editor directories and files
+# ==========================================
+# 4. Editor Files
+# ==========================================
 .vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ==========================================
+# 5. AI Scratch & Temporary Files
+# ==========================================
+scratch/
+temp/
+tmp/
+*.tmp
+.aiexclude
+.agents/scratch/
+.gemini/antigravity/brain/
